@@ -16,14 +16,14 @@ This project utilizes OpenCV, MediaPipe, and `screen_brightness_control` to adju
 - Capture video from the webcam.
 - Set the width and height of the video frame.
 
-##Main Loop:
+## Main Loop:
 
 -Capture a frame from the webcam.
 -Convert the frame to RGB for MediaPipe processing.
 -Process the frame to detect hands.
 -Extract hand landmarks if any are detected.
 
-##Processing Detected Hands:
+## Processing Detected Hands:
 
 -Draw hand landmarks on the frame.
 -Iterate through each landmark in the hand.
@@ -33,7 +33,7 @@ This project utilizes OpenCV, MediaPipe, and `screen_brightness_control` to adju
 -Map the distance to a brightness value using np.interp.
 -Set the screen brightness using sbc.set_brightness.
 
-##FPS Calculation and Display:
+## FPS Calculation and Display:
 
 -Calculate the frame rate.
 -Display the frame rate on the frame.
